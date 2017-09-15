@@ -107,6 +107,7 @@ $('form#contactform').validate({
       dataType: "json",
       success: function(data) {
           $("form#contactform :input").prop("disabled", true);
+          $('#thanks').show();
       }
     });
     return false;
