@@ -97,7 +97,7 @@ function consoleText(words, id, colors) {
 
 // form submission
 
-$('form.contactform').validate({
+$('form#contactform').validate({
   messages: { },
   submitHandler: function(form) {
     $.ajax({
@@ -106,7 +106,7 @@ $('form.contactform').validate({
       data: $(form).serialize(),
       dataType: "json",
       success: function(data) {
-          $("form.contactform :input").prop("disabled", true);
+          $("form#contactform :input").prop("disabled", true);
       }
     });
     return false;
