@@ -95,9 +95,28 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
-
 $(document).ready(function () {
         $(".navbar-toggle").on("click", function () {
             $(this).toggleClass("active");
         });
     });
+
+// form submission
+
+$('form#contactform').validate({
+  messages: { },
+  submitHandler: function(form) {
+    $.ajax({
+      url: "//formspree.io/bauman.kellyk@gmail.com",
+      method: "POST",
+      data: $(form).serialize(),
+      dataType: "json",
+      success: function(data) {
+          $("form#contactform :input").prop("disabled", true);
+          $('#thanks').show();
+      }
+    });
+    return false;
+  }
+});
+
