@@ -12,46 +12,46 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class= "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>                    
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
+                <!-- Navigation -->
+                <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header page-scroll">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand page-scroll" href="#page-top">HOME</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class= "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                                <li class="active hidden">
+                                    <a class="page-scroll" href="#page-top"></a>
+                                </li>
+                                <li>
+                                    <a class="navitem page-scroll" href="#about">ABOUT</a>                    
+                                </li>
+                                <li>
+                                    <a class="navitem page-scroll" href="#portfolio">PORTFOLIO</a>
+                                </li>
+                                <li>
+                                    <a class="navitem page-scroll" href="#contact">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container -->
+                </nav>
                 <div class="col-lg-12">
                     <!-- <h1>One Page Website</h1> -->
                     <div class="console-container">
@@ -59,24 +59,35 @@
                             <div class="console-underscore" id="console">&#95;</div>
                     </div>
                     <!-- <p>I like clean code and I cannot lie</p> -->
-                    <a class="btn btn-default page-scroll" href="#about">A little about me</a>
+                    <a class="aboutbutton" href="#about">A little about me</a>
+                    <!-- <a class="aboutbutton btn btn-primary btn-lg page-scroll" href="#about">A little about me</a> -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <!-- <section id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="aboutme">About Me</h1>
-                    <div class="blurb">
-                        <img class="kelly" src="kelly.jpg"><p>I'm a self taught web developer with a passion for learning. I am interested in building responsive websites with an intuitive feel. The first computer I remember using was a '95 Powermac and I've been addicted to Apple products since. My friends and family have recruited me as their personal computer repairwoman. When I'm not nose deep in my laptop you can find me hiking the foothills with my family or working on our new house. Most recently accessed: NPR news app, Buzzfeed, Sketch, and Wondershare. Recently visited sites:</p><a href="https://zellwk.com/blog/why-vertical-rhythms/" target="_blank"><img class="vertical" src="vertical.png" alt="vertical rythm"></a><a href="http://www.howmanypeopleareinspacerightnow.com/" target="_blank"><img class="space" src="space.png" alt="How many people are in space"></a>
+                    <div class= "container">
+                        <div class="blurb layout">
+                            <p class="main col col-main" role="main">I'm a self taught web developer with a passion for learning. When I'm not nose deep in my laptop you can find me hiking the foothills with my family or working on our new house. I've just published my first Google Chrome Extension and am currently building a webRTC video chat.s I'm looking for a permanent home with a team of collaborative developers.</p>
+                            <p class="complementary col col-complementary" role="col-complementary"><img class="kelly" src="kelly.jpg"></p>
                     </div>
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="about" class="about-section">
+        <h1 class="aboutme">About Me</h1>
+            <div class="flex-container">
+                <div class="flexcol blurb"><p>I'm a self taught web developer with a passion for learning. When I'm not nose deep in my laptop you can find me hiking the foothills with my family or working on our new house. I've just published my first Google Chrome Extension and am currently building a webRTC video chat. I'm looking for a permanent home with a team of collaborative developers.</p></div>
+                <div class="flexcol picture"><img class="kelly" src="kelly.jpg"></div>
+            </div>
     </section>
 
     <!-- Portfolio Section -->
@@ -86,8 +97,8 @@
                 <div class="col-lg-12">
                     <h1 class="port">Portfolio</h1>
                     <section class="auto-lightbox">
+                        <img src="ghostusa.png" alt='ghostusa' <a href="https://ghostusa.com" class=" firstbutton btn btn-info" role="button">Visit Site</a>>
                         <img src="liverez.png" alt="LiveRez">
-                        <img src="comingsoon.png" alt="">
                         <img src="comingsoon.png" alt="">
                         <img src="comingsoon.png" alt="">
                         <img src="comingsoon.png" alt="">

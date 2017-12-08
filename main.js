@@ -40,7 +40,7 @@ $(function() {
 
 
 //function([string1, string2],target id,[color1,color2])   
- consoleText(["Hi, I'm Kelly.", "A front end web developer.", "Let's get to work."], 'text',['tomato','rebeccapurple','#00a3cc']);
+ consoleText(["Hi, I'm Kelly.", "A front end web developer.", "Let's get to work."], 'text',['#f4a742','#f4a742','#f4a742']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -95,3 +95,9 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
+
+$(document).ready(function () {
+        $(".navbar-toggle").on("click", function () {
+            $(this).toggleClass("active");
+        });
+    });
